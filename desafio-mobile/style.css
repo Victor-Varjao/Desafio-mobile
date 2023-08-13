@@ -1,0 +1,289 @@
+/* Import de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+/* Exemplo de uso das fontes */
+/* 
+Headings, Call-to-actions, Header Navigation = font-family: 'Raleway', sans-serif;
+Body = font-family: 'Open Sans', sans-serif;
+*/
+
+
+/* Reset de configurações */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button, h1,
+h2, h3, a {
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Classes universais */
+.grid-layout {
+    padding: 0vh 4vh;
+}
+
+
+/* HEADER */
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .header-flex img {
+    width: 30%;
+}
+
+header .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height: 25px;
+}
+
+header .links a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0;
+}
+
+
+/* MAIN */
+main .main-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+main .img {
+    width: 100%;
+}
+
+/* Section INTRODUÇÃO */
+main .introducao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90vh;
+}
+
+.introducao h2,
+.introducao p {
+    text-align: center;
+}
+
+.introducao h2 {
+    font-size: 32px;
+}
+
+.introducao p {
+    font-weight: 600;
+}
+
+.input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input input {
+    height: 40px;
+    padding-left: 5px;
+    font-size: 16px;
+    border-radius: 7px;
+}
+
+.input button {
+    height: 40px;
+    font-size: 18px;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    background-color: hsl(224, 93%, 58%);
+}
+
+/* Section DESCRICAO */
+main .descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    height: 150vh;
+    background-color: hsl(240, 75%, 98%);
+    text-align: center;
+}
+
+.descricao h2{
+    padding: 10px;
+}
+
+.descricao .link {
+    width: 65%;
+    height: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgb(35, 126, 91);
+    margin: 20px 42px 0px;
+}
+
+.descricao .link a {
+    color: rgb(35, 126, 91);
+    text-align: none;
+    text-decoration: none;
+}
+
+.descricao .link img {
+    width: 9%;
+    padding: 0px 0px 0px 1px;
+}
+
+.descricao .citation {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+    padding: 6% 8%;
+    border-radius: 4px;
+    box-shadow: 0 0 1em rgb(139, 139, 139);
+}
+
+.citation h1 {
+    font-size: 48px;
+    align-self: flex-start;
+}
+
+.citation p {
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    text-align: start;
+}
+
+.citation .profile {
+    padding-top: 15px;
+    display: flex;
+}
+
+.citation .profile img {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.citation .profile .details {
+    padding-left: 15px;
+    text-align: start;
+}
+
+.profile .details h3 {
+    font-weight: bolder;
+}
+
+.profile .details p {
+    font-size: 13px;
+}
+
+/* Section Acesso */
+main .acesso {
+    height: 350px;
+    width: 100%;
+    background-color: hsl(238, 22%, 44%);
+}
+
+main .acesso .acesso-flex {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    padding: 15px 15px;
+    gap: 20px;
+    text-align: center;
+}
+
+.acesso .input {
+    width: 75%;
+}
+
+.acesso input {
+    border-radius: 5px;
+    padding: 6px;
+}
+
+.acesso button {
+    background-color: hsl(224, 93%, 58%);
+    border-radius: 3px;
+    padding: 5px;
+    color: white;
+    border: 0;
+}
+
+/* FOOTER */
+footer {
+    height: 79vh;
+    background-color: hsl(243, 87%, 12%);
+}
+
+.footer-flex {
+    margin: 30px 0;
+}
+
+footer,
+a {
+    padding: 0;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .about a {
+    margin: 12px 0;
+    font-size: 20px;
+}
+
+footer .about a:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.634);
+    width: 16%;
+}
+
+footer .about a:nth-child(4) {
+    margin-bottom: 25px;
+}
+
+footer .img-flex {
+    padding-bottom: 20px;
+}
+
+.phone {
+    display: flex;
+    justify-content: flex;
+    padding-bottom: 5px;
+}
+
+.phone img {
+    padding: 3px 6px;
+}
+
+.email {
+    display: flex;
+    justify-content: flex;
+    padding-bottom: 15px;
+}
+
+.email img {
+    padding: 3px 6px;
+}
